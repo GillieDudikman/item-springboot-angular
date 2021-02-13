@@ -1,0 +1,8 @@
+<div class="col-md-6 del">
+  <label for="delId">Enter ID</label>
+  <input [(ngModel)]="itemId" type="number" class="form-control"  name="id" id="delId" placeholder="id" required>
+  <div class="del">  
+  <button [disabled]="itemId == null " (click)="deleteItem(itemId)" class="btn btn-primary btn-md" type="submit">Save</button>
+  <button (click)="resetId(itemId)" type="button" type="reset" class="btn btn-outline-secondary btn-md">Clear</button>
+  </div>
+  </div>

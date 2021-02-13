@@ -1,0 +1,50 @@
+@import 'https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css';
+
+
+body{
+    background-color: #f8f9fa!important
+}
+
+.jumbotron{
+    text-align: center;
+    color: darkslateblue;
+}
+.jumbotron:hover{
+    color: deeppink;
+}
+
+.headJum{
+    font-size: 5em;
+    font-family: fantasy;
+}
+
+app-menu{
+    padding: 2px;
+   position: re;
+   margin: 20px;
+   text-align: center;
+   opacity: inherit; 
+}
+
+app-menu .btn-md{
+    padding: 10px;
+    margin: 8px;
+    float: left;
+    text-align: center;
+    border-radius: 40px;
+    border-color: black;
+    background: darkslateblue;
+    font-style: oblique;  
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+    color: white;
+}
+
+app-menu .btn-md:hover,.btn-md:focus{
+    background: deeppink;
+    color:white;
+}
+
+app-menu .btn-primary:disabled{
+    background: #2fa1ee
+}
+

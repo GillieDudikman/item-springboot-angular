@@ -1,0 +1,16 @@
+<form #removeAmountForm="ngForm" (ngSubmit)="amountItemRemove(removeAmountForm)" class="del needs-validation" novalidate>
+  <div class="form-row">
+    <div class="col-md-4 mb-3">
+      <label for="valId">Enter ID</label>
+      <input type="number" class="form-control" ngModel name="id" id="valId" placeholder="id" required>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="removeValAmount">Amount to Delete</label>
+      <input type="number" class="form-control" ngModel name="amount" id="removeValAmount" placeholder="amount" required>
+    </div>
+  </div>
+  <div class="del">
+    <button [disabled]="removeAmountForm.invalid" class="btn btn-primary btn-md" type="submit">Save</button>
+    <button type="button" (click)="reset(removeAmountForm)" type="reset" class="btn btn-outline-secondary btn-md">Clear</button>
+  </div>
+</form>

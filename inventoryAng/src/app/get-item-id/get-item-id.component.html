@@ -1,0 +1,36 @@
+
+  <div class="col-md-6 del">
+  <label for="getValId">Enter ID</label>
+  <input [(ngModel)]="itemId"  type="number" class="form-control" name="id" id="getValId" placeholder="id" required>      
+    <div *ngIf="item!=null; else noItem">
+      <table class="table table-stripped">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Item Name</th>
+            <th scope="col">Item Code</th>
+            <th scope="col">Current Amount</th>
+            <th scope="col">Withdraw</th>
+            <th scope="col">Deposit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+           <th scope="row">{{item?.id}}</th>
+            <th>{{item?.name}}</th>
+            <th>{{item?.code}}</th>
+            <th>{{item?.amount}}</th>
+            <th>{{item?.withdraw}}</th>
+            <th>{{item?.deposit}}</th>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <ng-template class="del" #noItem>
+       No Item to Show
+    </ng-template>
+    <div class="del">
+      <input type="submit" value="Get" [disabled]="itemId == null" (click)="getItem(itemId)" class="btn btn-md btn-primary">
+      <input type="button" value="Clear" (click)="resetId(itemId)" type="reset" class="btn btn-outline-secondary btn-md">
+    </div>
+    </div>

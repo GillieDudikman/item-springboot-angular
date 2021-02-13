@@ -1,0 +1,18 @@
+
+<div class="menu">
+    <button name="Get All Items" (click)="open('getAll')" class="mat-raised-button btn-md" type="button" >Get All Items</button>
+    <button name="Get Item By ID"(click)="open('getId')" class="mat-raised-button btn-md" type="button">Get Item By ID</button> 
+    <button name="Add Item" (click)="open('add')" class="mat-raised-button btn-md" type="button">Add Item</button> 
+    <button name="Delete Item" (click)="open('delete')" class="mat-raised-button btn-md" type="button">Delete Item</button>
+    <button name="Make a Deposit to Item" (click)="open('deposit')" class="mat-raised-button btn-md" type="button">Make a Deposit to Item</button>
+    <button name="Make a Withdraw to Item" (click)="open('withrow')" class="mat-raised-button btn-md" type="button">Make a Withdraw to Item</button>
+    <button name="close" id="close"(click)="close()" class="mat-raised-button btn-md" type="button">Close</button>
+
+    <ng-content *ngComponentOutlet="replaceComponent"></ng-content>
+
+
+
+
+    
+</div>
+

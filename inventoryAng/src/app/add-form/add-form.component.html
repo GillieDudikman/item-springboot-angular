@@ -1,0 +1,19 @@
+<form #addForm="ngForm" (ngSubmit)="addItem(addForm)" class=" del needs-validation" novalidate>
+  <div class="form-row">
+    <div class="col-md-4 mb-3">
+      <label for="valName">Item Name</label>
+      <input trim="blur" type="text" class="form-control" ngModel name="name" id="valName" placeholder="name" required>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="valCode">Code</label>
+      <input trim="blur" type="text" class="form-control" ngModel name="code" id="valCode" placeholder="code" required>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="addValAmount">Amount</label>
+      <input type="number" class="form-control" ngModel name="amount" id="addValAmount" placeholder="amount" required>        </div>
+    </div>
+    <div class="del">
+      <button [disabled]="addForm.invalid"  class="btn btn-primary btn-md" type="submit">Save</button>
+      <button type="button" (click)="reset(addForm)" type="reset" class="btn btn-outline-secondary btn-md">Clear</button>
+    </div>
+</form>

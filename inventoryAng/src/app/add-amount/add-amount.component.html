@@ -1,0 +1,16 @@
+<form #addAmountForm="ngForm" (ngSubmit)="amountItemAdd(addAmountForm)" class="del needs-validation" novalidate>
+  <div class="form-row">
+    <div class="col-md-4 mb-3">
+      <label for="amountValId">Enter ID</label>
+      <input type="number" class="form-control" ngModel name="id" id="amountValId" placeholder="id" required>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="valAmount">Amount to Add</label>
+      <input type="number" class="form-control" ngModel name="amount" id="valAmount" placeholder="amount" required>
+    </div>
+  </div>
+  <div class="del">
+    <button [disabled]="addAmountForm.invalid" class="btn btn-primary btn-md" type="submit">Save</button>
+    <button type="button" (click)="reset(addAmountForm)" type="reset" class="btn btn-outline-secondary btn-md">Clear</button>
+  </div>
+</form>
