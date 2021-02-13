@@ -1,0 +1,9 @@
+com\app\inventory\InventoryApplication.class
+com\app\inventory\model\Item.class
+com\app\inventory\repository\ItemRepository.class
+com\app\inventory\exception\ItemNotFoundException.class
+com\app\inventory\service\ItemService.class
+com\app\inventory\controller\ItemController.class
+com\app\inventory\model\dto\ItemDto.class
+com\app\inventory\exception\AmountLessThanZero.class
+com\app\inventory\exception\ItemAlreadyExist.class

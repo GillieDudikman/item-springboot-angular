@@ -1,0 +1,9 @@
+C:\Users\Gillie\Documents\eclips workshop\inventory\src\main\java\com\app\inventory\exception\ItemNotFoundException.java
+C:\Users\Gillie\Documents\eclips workshop\inventory\src\main\java\com\app\inventory\InventoryApplication.java
+C:\Users\Gillie\Documents\eclips workshop\inventory\src\main\java\com\app\inventory\model\dto\ItemDto.java
+C:\Users\Gillie\Documents\eclips workshop\inventory\src\main\java\com\app\inventory\controller\ItemController.java
+C:\Users\Gillie\Documents\eclips workshop\inventory\src\main\java\com\app\inventory\exception\ItemAlreadyExist.java
+C:\Users\Gillie\Documents\eclips workshop\inventory\src\main\java\com\app\inventory\service\ItemService.java
+C:\Users\Gillie\Documents\eclips workshop\inventory\src\main\java\com\app\inventory\model\Item.java
+C:\Users\Gillie\Documents\eclips workshop\inventory\src\main\java\com\app\inventory\exception\AmountLessThanZero.java
+C:\Users\Gillie\Documents\eclips workshop\inventory\src\main\java\com\app\inventory\repository\ItemRepository.java
