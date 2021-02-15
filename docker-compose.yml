@@ -3,14 +3,14 @@ version: "3.9"
 services:
 
   #Back-end Spring Boot Application
-  springboot-app:
+  spring:
     build: ./inventory
     container_name: spring
     ports:
       - 8080:8080 # Forward the exposed port 8080 on the container to port 8080 on the host machine
 
   #Fron-end Angular Application
-  angular-app:
+  angular:
     build: ./inventoryAng
     container_name: angular
     ports:
