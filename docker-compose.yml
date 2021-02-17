@@ -16,4 +16,4 @@ services:
     ports:
       - 4200:80
     links:
-      - springboot-app
+      - spring
